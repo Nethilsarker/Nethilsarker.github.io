@@ -14,7 +14,7 @@ body {
 
 /* Hero Section */
 header.hero {
-    background: linear-gradient(135deg, #6C63FF, #4E91FC);
+    background: linear-gradient(135deg, white, #4E91FC);
     color: white;
     text-align: center;
     padding: 100px 20px;
@@ -128,7 +128,7 @@ nav.navbar ul li a:hover {
 /* Contact Section */
 .contact {
     padding: 50px 20px;
-    background: #6C63FF;
+    background: linear-gradient(135deg, white, #4E91FC);
     color: white;
     text-align: center;
 }
