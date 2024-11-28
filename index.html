@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="hero">
+        <div class="container">
+            <img src="profile-pic\pfp.jpg" alt="Your Profile Picture" class="profile-pic">
+            <h1>Nethil Sarker</h1>
+            <p>Creative Graphic Designer</p>
+            <a href="#portfolio" class="cta">View My Works</a>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="portfolio" class="portfolio">
+        <h2>My Works</h2>
+        <div class="gallery">
+            <img src="works\food_design.jpg" alt="Project 1">
+            <img src="works\food_design_1.jpg" alt="Project 2">
+            <img src="works\food_design_2.jpg" alt="Project 3">
+            <img src="works\client_work_60.jpg" alt="Project 4">
+            <img src="works\work18.jpg" alt="Project 5">
+            <img src="works\client_work_61.jpg" alt="Project 6">
+            <img src="works\honor_200_pro.jpg" alt="Project 7">
+            <img src="works\Vivo_Y28_4g.jpg" alt="Project 8">
+            <img src="works\oppo_reno_12_pro.jpg" alt="Project 9">
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Hi there! I'm a graphic designer with a passion for creating compelling visuals and designs. My expertise lies in bringing ideas to life with creativity and precision.</p>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Me</h2>
+        <form action="https://formspree.io/f/YOUR_ID" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Nethil Sarker. Designed with ❤️.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
